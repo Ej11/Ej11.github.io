@@ -1,0 +1,188 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size:100%;
+    line-height: 1.7em;
+    color: black;
+}
+
+#top_row h1 {
+    color: rebeccapurple;
+    font-size: 3.75em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+h3 {
+    color: darkolivegreen;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+a {
+    color: mediumblue;
+    text-decoration: none;
+}
+a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+/* #bio {
+    margin-left: 3em;
+    font-size: 0.875em;
+
+} */
+#bio a {
+    color: coral;
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+}
+
+#bio a:hover {
+    color: crimson;
+}
+
+table {
+	width: 75%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #075F8A;
+	border-spacing: 3px;
+	margin: auto;
+	table-layout: auto;
+	border-collapse: collapse;
+}
+th {
+	height: 40px;
+	font-weight: bold;
+}
+th, td {
+	padding: 2px;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	color: #333333;
+}
+/* #container {
+    width:90%;
+    margin: 10px auto;
+} */
+#container{
+    width:70%;
+}
+
+#brand-logo{
+    font-size:40x;
+    margin-left:10px;
+}
+
+#top_row nav {
+    float: right;
+}
+
+/* #top_row {
+    border-bottom: 1px dotted #ccc;
+    padding: .5em .5em 3em .5em;
+} */
+
+#top_row header {
+    margin-bottom: -2.5em;
+}
+
+#top_row nav a {
+    font-size: 1.125em;
+    font-weight: 400;
+    padding: 15px;
+    color: black;
+}
+
+#top_row nav a.selected {
+    background: #f6f6f6;
+    color: #bbbbbb;
+}
+
+#top_row nav a.selected:hover {
+    background: #f6f6f6;
+    color: #bbbbbb;
+}
+
+#top_row nav a:hover {
+    background: #f6f6f6;
+    color: #0F4970;
+}
+
+/* #content {
+    float: left;
+    width: 65%;
+    margin:0;
+    padding:1em;
+    border-right: 1px dotted #ccc; 
+} */
+
+#content h3 {
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    margin: 30px 0 10px 0;
+    font-weight: normal;
+}
+
+#content img {
+    float: left;
+    margin: 1em;
+}
+
+/* #sidebar {
+    float:left;
+    padding: 1em;
+    font-size: 0.875em;
+} */
+
+#sidebar h3 {
+    font-size: 1.1.25em;
+    border-bottom: 1px dotted #ccc;
+}
+
+footer {
+    clear:both;
+    margin:0;
+    padding:.5em;
+    color: #333333;
+    font-variant: small-caps;
+    font-size: .813em;
+    text-align: center;
+    border-top: 1px dotted #cccccc;
+}
+
+form {
+    width: 75%;
+    margin: auto;
+    border: 1px solid #075F8A;
+    padding: 10px;
+
+}
+
+legend {
+    margin: auto;
+    font-weight: bold;
+    color: #666666;
+    margin-bottom: 5px;
+
+}
+
+label {
+    font-weight: bold;
+    margin: auto;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+#courselist {
+	clear:both;
+}
+
+iframe {
+	margin: auto;
+}

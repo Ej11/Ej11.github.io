@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META tags help search engines identify your page -->
+    <meta charset="utf-8"> <!-- character encoding for the page -->
+    <meta name="author" content="E.j. Ezuma-Ngwu">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="E.j. Ezuma-Ngwu professional website">
+    <link rel="stylesheet" type="text/css" href=" css/styles.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" type="text/javascript"> </script>
+    <script src="https://cdn.plot.ly/plotly-2.18.2.min.js"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"> </script>
+    <script src="js/script.js" type="text/javascript"> </script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- The title will appear in the menu bar of the browser -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- The title will appear in the menu bar of the browser -->
+
+    <!-- The title will appear in the menu bar of the browser -->
+    <title> Website of E.j. Ezuma-Ngwu </title>
+    <script>
+        $(document).ready(function(){
+            $('select').formSelect();
+        });
+    </script>
+</head>
+<body>
+    
+    <nav> <!-- nav tag is used to organize navigation items -->
+        <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">E.j. Ezuma-Ngwu</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li> <a href="index.html">My Info</a></li>
+                <li class="active"><a href="experience.html">My Experience</a> </li>
+                <li><a href="contact-info.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <!-- These links take us to another page within the website-->
+    </nav>
+    <div class="container">
+    <div id="content">
+    <h2>Contact Me</h2>
+    <p>Please use the below map to find me</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4723112165357!2d-79.94791408522799!3d40.44268216198573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f331f6a625ff%3A0xa8563ce86d5d16fc!2s5000%20Forbes%20Ave%2C%20Pittsburgh%2C%20PA%2015213!5e0!3m2!1sen!2sus!4v1679461113630!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
+    <div id="mydays">
+        <!-- <script src="js/plot.js"></script> -->
+    </div>
+    <p>Please use the below form to get in touch with me.</p>
+    <form onsubmit="return validate()">
+        <fieldset>  
+        <legend>Tell me more about yourself</legend>
+
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name" name="name" value="Your Name" size="20" maxlength="250">
+        <br>
+        <br>
+        <label for="birthday">Your date of birth(required):</label>
+        <br>
+        <input type="date" id="txtDate" name="txtDate" value="" size="20" onsubmit="$"   required>
+
+        </fieldset>
+        <fieldset>
+        <legend>Tell me about your preferences</legend>
+        <!-- Include input fields for color and message here -->
+        <label for="favcolor">Your favorite flower color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#000000">
+
+        <p><label for="message">Message:</label></p>
+        <textarea id="message" name="message" rows="10" cols="50" maxlength="1000">
+        </textarea>
+        
+        </fieldset>
+        <fieldset>
+        <legend>Let's stay in touch</legend>
+        <!-- Include inputs of type select, checkbox, email and password here -->
+        <label for="source"><strong>How did you find out about me?</strong></label>
+        <select name="source" id="source">
+          <option value="Google">Google</option>
+          <option value="News article">News article</option>
+          <option value="Friend">Friend</option>
+          <option value="Other">Other</option>
+        </select>
+        <br>
+        <br>
+
+        <!-- <label for="updates"><strong>Please indicate if you want to receive news updates via email:</strong></label> -->
+        <label>
+        <br>
+        <input type="checkbox" id="joinlist" name="joinlist" />
+        <span>Please send me updates by email</span>
+        <!-- <input type="checkbox" id="updates" name="updates" value="updates">
+        <label for="updates">Yes, Please update me!</label> -->
+        </label><br/>
+        <br>
+        <br>
+
+        <label for="email"><strong>Please provide your email address:</strong></label>
+        
+        <br>
+
+        <input type="email" id="email" name="email" placeholder="abc@defg.com">
+
+        <br>
+        <br>
+
+        <label for="password"><strong>Choose a password:</strong></label>
+        <br>
+        <input type="text" id="password" name="password" size="20">
+        <br>
+
+        <label for="Phone"><strong>Please provide your phone number(no spaces or dashes)(required):</strong></label>
+        <br>
+        <input type="tel" id="phone" name="phone" size="20" required>
+        <br>
+        <br>
+        <br>
+
+        </fieldset>
+        <fieldset>
+        <input type ="image" src="images/submit.png" alt="Submit" name= "btnimage">
+        </fieldset>
+    </form>
+    </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l12 s12">
+                    <a href="mailto:ufe@andrew.cmu.edu"><img src="images/email.png" alt="mail Icon"></a>
+                    <a href="https://www.linkedin.com/in/ej-en/"><img src="images/linkedin.png" alt="linkedin Icon"></a>
+                    <a href="https://www.facebook.com/uzoma.ngwu"><img src="images/facebook.png" alt="facebook Icon"></a>   
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; E.j. Ezuma-Ngwu
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

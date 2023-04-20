@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META tags help search engines identify your page -->
+    <meta charset="utf-8"> <!-- character encoding for the page -->
+    <meta name="author" content="E.j. Ezuma-Ngwu">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="E.j. Ezuma-Ngwu professional website">
+    <link rel="stylesheet" type="text/css" href=" css/styles.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" type="text/javascript"> </script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"> </script>
+    <script src="js/script.js" type="text/javascript"> </script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- The title will appear in the menu bar of the browser -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- The title will appear in the menu bar of the browser -->
+    <title> Website of E.j. Ezuma-Ngwu </title>
+
+    <script>
+        $(document).ready(function(){
+            $('.tabs').tabs();
+        });
+    </script>
+
+</head>
+
+<body>
+    
+    <nav> <!-- nav tag is used to organize navigation items -->
+        <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">E.j. Ezuma-Ngwu</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li> <a href="index.html">My Info</a></li>
+                <li class="active"><a href="experience.html">My Experience</a> </li>
+                <li><a href="contact-info.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <!-- These links take us to another page within the website-->
+    </nav>
+    <!-- <div id="container">
+
+    <div id="top_row">
+
+        <header>
+            <h1>E.j. Ezuma-Ngwu</h1>
+            <p>Carnegie Mellon University, Information Systems Program</p>
+        </header>
+
+        <nav> 
+            <a href="index.html">My Info</a> |
+            <a class="selected" href="experience.html">My Experience</a> |
+            <a href="contact-info.html">Contact Me</a>
+        </nav>
+    </div> -->
+
+
+<div id = "content">
+    <h2>Experience</h2>
+    <table>
+        <tr>
+            <th colspan="3">Course Projects</th>
+        </tr>
+        <tr>
+            <th>Title</th>
+            <th>Course</th>
+            <th>Semester</th>
+        </tr>
+            <tr onmouseover="showDescription('Built the playable game Tetris using a rows and columns design in Python. I Also collaborated with my classmate in figuring out the best approaches and data structures to use in the program’s construction.');"
+                onmouseout="hideDescription();">
+                <td>Partner Tetris</td>
+                <td>15-112</td>
+                <td>Spring 2022</td>
+            </tr>
+            <tr onmouseover="showDescription('Developed a cooking-based game where you must compete and cook against an AI enemy to see who can make the most plates in a given time. Implemented a Breadth-First Search AI Algorithm, changeable graphics, and high scores in over 1,400 lines of code.');"
+                onmouseout="hideDescription();">
+                <td>OverCookedPy2!</td>
+                <td>15-112</td>
+                <td>Spring 2022</td>
+            </tr>
+            <tr onmouseover="showDescription('Created a simple nutrition tracker that asked for user input on their health like daily exercise, diet, etc. Also, calculated how long it would take to lose weight at their current time frame.');"
+                onmouseout="hideDescription();"> 
+                <td>Social Media Tracker</td>
+                <td>15-110</td>
+                <td>Fall 2021</td>
+            </tr>
+    </table>
+    <div id="description"></div>
+    <div class="row">
+        <div class="col s12">
+        <ul class="tabs">
+            <li class="tab col s3"><a class="active" href="#tabs-1">Partner Tetris</a></li>
+            <li class="tab col s3"><a href="#tabs-2">OverCookedPy2!</a></li>
+            <li class="tab col s3"><a href="#tabs-3">Social Media Tracker</a></li>
+        </ul>
+        </div>                                      
+        <div id="tabs-1" class="col s12">
+        <p>Description of Partner Tetris.</p>
+        <p>Built the playable game Tetris using a rows and columns design in 
+        Python. I Also collaborated with my classmate in figuring out the best
+        approaches and data structures to use in the program’s construction.</p>
+        </div>
+                                                                                
+        <div id="tabs-2" class="col s12">
+        <p>Description of OverCookedPy2!</p>
+        <p>Developed a cooking-based game where you must compete and cook 
+            against an AI enemy to see who can make the most plates in a given 
+            time. Implemented a Breadth-First Search AI Algorithm, changeable 
+            graphics, and high scores in over 1,400 lines of code.</p>
+        </div>
+                                                                                
+        <div id="tabs-3" class="col s12">
+        <p>Description of Social Media Tracker.</p>
+        <p>Created a simple nutrition tracker that asked for user input on 
+        their health like daily exercise, diet, etc. Also, calculated how
+        long it would take to lose weight at their current time frame.</p>
+        </div>
+        </div> 
+    </div>
+
+<!-- <div id="sidebar">
+    <h3>Contact</h3>
+    <strong>E.j. Ezuma-Ngwu</strong><br>
+    <a href="http://www.cmu.edu" target="_blank">Carnegie Mellon University</a><br>
+    5000 Forbes Avenue<br>
+    Pittsburgh, PA 15213<br>
+    412-268-0000 (h)<br>
+    412-555-5555 (c)<br><br>
+    <a href="mailto:ufe@andrew.cmu.edu"><img src="images/email.png" alt="mail Icon"></a>
+    <a href="https://www.linkedin.com/in/ej-en/"><img src="images/linkedin.png" alt="linkedin Icon"></a>
+    <a href="https://www.facebook.com/uzoma.ngwu"><img src="images/facebook.png" alt="facebook Icon"></a>
+</div> -->
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l12 s12">
+                <a href="mailto:ufe@andrew.cmu.edu"><img src="images/email.png" alt="mail Icon"></a>
+                <a href="https://www.linkedin.com/in/ej-en/"><img src="images/linkedin.png" alt="linkedin Icon"></a>
+                <a href="https://www.facebook.com/uzoma.ngwu"><img src="images/facebook.png" alt="facebook Icon"></a>   
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            &copy; E.j. Ezuma-Ngwu
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
