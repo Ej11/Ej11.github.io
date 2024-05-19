@@ -23,6 +23,9 @@ footer {
     border-top: 1px dotted #cccccc;
 }
 
+.footer-copyright {
+    text-align:center;
+}
 /* .foot {
     color:white;
     height:100%;
