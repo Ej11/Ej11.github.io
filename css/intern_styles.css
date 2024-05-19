@@ -24,8 +24,23 @@ footer {
 }
 
 .footer-copyright {
-    text-align:center;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically, if needed */
+    text-align: center;      /* Ensure text is centered */
+    padding: .5em;           /* Adjust padding if necessary */
+    color: #333333;
+    font-variant: small-caps;
+    font-size: .813em;
+    border-top: 1px dotted #cccccc;
 }
+
+footer .container {
+    margin: 0 auto; /* Center the container within the footer */
+    text-align: center; /* Center text within the container */
+}
+
+
 /* .foot {
     color:white;
     height:100%;
